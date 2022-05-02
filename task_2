@@ -1,0 +1,16 @@
+sen(std::string s, std::string sentence) {
+    
+    std::string word;
+    int count = 0;
+
+    
+    for ( std::istringstream is( sentence ); is >> word; ){
+        
+        count ++;
+        
+        if (word == s) {
+            std::cout << "Местоположение: "<< count << " Слово: " << word << std::endl;
+        }
+        
+    }
+}
